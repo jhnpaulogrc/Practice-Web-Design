@@ -1,0 +1,90 @@
+[
+    {
+        "day": "Day 1",
+        "dayWeek": "Mon",
+        "sleepTime": "21:00",
+        "awakeTime": "5:00",
+        "timeSlept": "8",
+        "numMin": "15",
+        "quality": "Very good",
+        "difficulty": "temp",
+        "numWake": "0"
+    },
+    {
+        "day": "Day 2",
+        "dayWeek": "Tue",
+        "sleepTime": "23:00",
+        "awakeTime": "5:00",
+        "timeSlept": "6",
+        "numMin": "10",
+        "quality": "Good",
+        "difficulty": "None",
+        "numWake": "3"
+    },
+    {
+        "day": "Day 3",
+        "dayWeek": "Wed",
+        "sleepTime": "2:00",
+        "awakeTime": "7:00",
+        "timeSlept": "5",
+        "numMin": "5",
+        "quality": "Bad",
+        "difficulty": "noise",
+        "numWake": "0"
+    },
+    {
+        "day": "Day 4",
+        "dayWeek": "Thur",
+        "sleepTime": "21:00",
+        "awakeTime": "5:30",
+        "timeSlept": "8",
+        "numMin": "10",
+        "quality": "Very good",
+        "difficulty": "None",
+        "numWake": "2"
+    },
+    {
+        "day": "Day 5",
+        "dayWeek": "Fri",
+        "sleepTime": "23:00",
+        "awakeTime": "5:45",
+        "timeSlept": "6",
+        "numMin": "25",
+        "quality": "Very good",
+        "difficulty": "temp",
+        "numWake": "1"
+    },
+    {
+        "day": "Day 6",
+        "dayWeek": "Sat",
+        "sleepTime": "22:30",
+        "awakeTime": "5:50",
+        "timeSlept": "7",
+        "numMin": "30",
+        "quality": "Good",
+        "difficulty": "None",
+        "numWake": "2"
+    },
+    {
+        "day": "Day 7",
+        "dayWeek": "Sun",
+        "sleepTime": "23:00",
+        "awakeTime": "6:00",
+        "timeSlept": "7",
+        "numMin": "15",
+        "quality": "Very good",
+        "difficulty": "None",
+        "numWake": "2"
+    },
+    {
+        "day": "Day 1",
+        "dayWeek": "Mon",
+        "sleepTime": "23:00",
+        "awakeTime": "9:00",
+        "timeSlept": "",
+        "numMin": "30",
+        "quality": "Bad",
+        "difficulty": "noise",
+        "numWake": "45"
+    }
+]

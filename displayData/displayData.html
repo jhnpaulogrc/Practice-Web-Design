@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="debug"></div>
+    <div id = "tableDisplay"></div>
+    <div id="tableSecond"></div>
+    <script>
+        fetch("data.json")
+            .then(response => response.json())
+            .then(data => {
+                var day = [];
+                var dayWeek = [];
+                var sleepTime = [];
+                var awakeTime = [];
+                var timeSlept = [];
+                var numMin = [];
+                var quality = [];
+                var difficulty = [];
+                var numWake = [];
+                for (let i = 0; i < data.length; i++) {
+                    day.push(data[i].day);
+                    dayWeek.push(data[i].dayWeek)
+                    sleepTime.push(data[i].sleepTime)
+                    awakeTime.push(data[i].awakeTime)
+                    timeSlept.push(data[i].timeSlept)
+                    numMin.push(data[i].numMin)
+                    quality.push(data[i].quality)
+                    difficulty.push(data[i].difficulty)
+                    numWake.push(data[i].numWake)
+                }
+                
+                var table = '<table> <thead><tr> <th>Day</th> <th>Day of the Week</th> <th>Time I Sleep</th> <th>Time I Wake Up</th> <th>Hours of Sleep</th>  </tr></thead> <tbody>';
+                
+                for (let i = 0; i < data.length; i++) {
+                    table += '<tr><td>' + day[i]+  '</td><td>' + dayWeek[i]+ '</td><td>' +sleepTime[i]+ '</td><td>' +awakeTime[i] + '</td><td>' 
+                        +timeSlept[i]+  '</td></tr>';
+                }
+
+                table += '</tbody></table>';
+                tableDisplay.innerHTML = table;
+
+                var table2 = '<table> <thead><tr> <th>Day</th> <th>Day of the Week</th> <th>Number of Mins to Fall Asleep</th> <th>Quality of Sleep</th> <th>Reason I had difficulty to Sleep</th> <th>No. of times I Woke Up</th> </tr></thead> <tbody>';
+                for (let i = 0; i < data.length; i++) {
+                    table2 += '<tr><td>' + day[i]+  '</td><td>' + dayWeek[i]+ '</td><td>' +numMin[i]+'</td><td>' +quality[i]+ '</td><td>' +difficulty[i] + '</td><td>' 
+                            +numWake[i]+  '</td></tr>';
+                }
+                table2 += '</tbody></table>';
+                var tableSecond = document.getElementById("tableSecond");
+                tableSecond.innerHTML = table2;
+
+            })
+    </script>
+</body>
+</html>
